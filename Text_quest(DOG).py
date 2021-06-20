@@ -30,7 +30,7 @@ if step.lower() == "мкад":
     variable = True
     while variable:
         stop = input("Ваш вариант: ")
-        if stop != "1" or stop != "2":
+        if stop != "1" and stop != "2":
             print('Вы должны ввести "1" или "2"')
         if stop == "1":
             print("----------------"
@@ -45,7 +45,7 @@ if step.lower() == "мкад":
             print("Выбери вариант: 1. Ты хочешь пойти под дождем, 2. Ты хочешь переждать дождь.")
             while variable:
                 rain = input("Ваш вариант:  ")
-                if rain != "1" or rain != "2":
+                if rain != "1" and rain != "2":
                     print('Вы должны ввести "1" или "2"')
                 if (rain) == "1":
                     print("----------------"
@@ -63,7 +63,7 @@ if step.lower() == "мкад":
                     while variable:
                         while time_bask < 20:
                             time = input("Введи время: ")
-                            if time != "1" or time != "2" or time != "3":
+                            if time != "1" and time != "2" and time != "3":
                                 print('Вы должны ввести "1" или "2" или "3"')
                             if (time == "1"):
                                 time_bask += 5
@@ -86,7 +86,7 @@ if step.lower() == "мкад":
                                         "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                                     while variable:
                                         step = input("Познакомиться? ")
-                                        if step != "1" or step != "2":
+                                        if step != "1" and step != "2":
                                             print('Вы должны ввести "1" или "2"')
                                         if step.lower() == "1":
                                             print(
@@ -99,8 +99,8 @@ if step.lower() == "мкад":
                                                   "\n| --=======    |"
                                                   "\n|   |     |    |"
                                                   "\n   FOOD: " + "*" * food + ""
-                                                                               "\n  WATER: " + "*" * water + ""
-                                                                                                             "\n----------------")
+                                                  "\n  WATER: " + "*" * water + ""
+                                                  "\n----------------")
                                             print("FIN!")
                                             variable = False
                                         elif step.lower() == "2":
@@ -114,8 +114,8 @@ if step.lower() == "мкад":
                                                   "\n| --=======    |"
                                                   "\n|   |     |    |"
                                                   "\n   FOOD: " + "*" * food + ""
-                                                                               "\n  WATER: " + "*" * water + ""
-                                                                                                             "\n----------------")
+                                                  "\n  WATER: " + "*" * water + ""
+                                                  "\n----------------")
                                             print("FIN!")
                                             variable = False
                                     break
@@ -135,7 +135,7 @@ if step.lower() == "мкад":
                                       "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                                 while variable:
                                     step = input("Познакомиться? ")
-                                    if step != "1" or step != "2":
+                                    if step != "1" and step != "2":
                                         print('Вы должны ввести "1" или "2"')
                                     if step.lower() == "1":
                                         print(
@@ -198,7 +198,7 @@ if step.lower() == "мкад":
                           "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                     while variable:
                         step = input("Познакомиться? ")
-                        if step != "1" or step != "2":
+                        if step != "1" and step != "2":
                             print('Вы должны ввести "1" или "2"')
                         if step.lower() == "1":
                             print(
@@ -242,7 +242,7 @@ if step.lower() == "мкад":
             print("Выбери вариант: 1. Ты хочешь пойти под дождем, 2. Ты хочешь переждать дождь.")
             while variable:
                 rain = input("Ваш вариант:  ")
-                if rain != "1" or rain != "2":
+                if rain != "1" and rain != "2":
                     print('Вы должны ввести "1" или "2"')
                 if (rain) == "1":
                     print("----------------"
@@ -260,7 +260,7 @@ if step.lower() == "мкад":
                     while variable:
                         while time_bask < 20:
                             time = input("Введи время: ")
-                            if time != "1" or time != "2" or time != "3":
+                            if time != "1" and time != "2" and time != "3":
                                 print('Вы должны ввести "1" или "2" или "3"')
                             if (time == "1"):
                                 time_bask += 5
@@ -283,7 +283,7 @@ if step.lower() == "мкад":
                                         "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                                     while variable:
                                         step = input("Познакомиться? ")
-                                        if step != "1" or step != "2":
+                                        if step != "1" and step != "2":
                                             print('Вы должны ввести "1" или "2"')
                                         if step.lower() == "1":
                                             print(
@@ -332,7 +332,7 @@ if step.lower() == "мкад":
                                       "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                                 while variable:
                                     step = input("Познакомиться? ")
-                                    if step != "1" or step != "2":
+                                    if step != "1" and step != "2":
                                         print('Вы должны ввести "1" или "2"')
                                     if step.lower() == "1":
                                         print(
@@ -396,7 +396,7 @@ if step.lower() == "мкад":
                           "\nХочешь с ними познакомиться? 1. Да, 2. Нет")
                     while variable:
                         step = input("Познакомиться? ")
-                        if step != "1" or step != "2":
+                        if step != "1" and step != "2":
                             print('Вы должны ввести "1" или "2"')
                         if step.lower() == "1":
                             print(
@@ -446,7 +446,7 @@ elif step.lower() == "город":
     variable = True
     while variable:
         step = input("Утолить жажду? ")
-        if step.lower() != "y" or step.lower() != "n":
+        if step.lower() != "y" and step.lower() != "n":
             print('Вы должны ввести "y" или "n"')
         if step.lower() == "y":
             food -= 1
@@ -464,7 +464,7 @@ elif step.lower() == "город":
                   "\nхот-догов с передвижной тележкой.Хочешь проявить инициативу?  Y / N")
             while variable:
                 step = input("Проявить инициативу?")
-                if step.lower() != "y" or step.lower() != "n":
+                if step.lower() != "y" and step.lower() != "n":
                     print('Вы должны ввести "y" или "n"')
                 if step.lower() == "y":
                     food -= 1
@@ -523,7 +523,7 @@ elif step.lower() == "город":
                                   "\nХочешь попить? Y / N")
                             while variable:
                                 step = input("Хочешь попить?")
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 if step.lower() == "y":
                                     food -= 1
@@ -541,7 +541,7 @@ elif step.lower() == "город":
                                           "\nХочешь с ними познакомиться? Y / N")
                                     while variable:
                                         step = input("Познакомиться?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food -= 1
@@ -592,7 +592,7 @@ elif step.lower() == "город":
                                           "\nХочешь с ними познакомиться? Y / N")
                                     while variable:
                                         step = input("Познакомиться?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food -= 1
@@ -645,7 +645,7 @@ elif step.lower() == "город":
                           "\nХочешь попить? Y / N")
                     while variable:
                         step = input("Хочешь попить?")
-                        if step.lower() != "y" or step.lower() != "n":
+                        if step.lower() != "y" and step.lower() != "n":
                             print('Вы должны ввести "y" или "n"')
                         if step.lower() == "y":
                             food -= 1
@@ -663,7 +663,7 @@ elif step.lower() == "город":
                                   "\nХочешь с ними познакомиться? Y / N")
                             while variable:
                                 step = input("Познакомиться?")
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 if step.lower() == "y":
                                     food -= 1
@@ -672,7 +672,7 @@ elif step.lower() == "город":
                                           "\nНо ты очень проголодался. Ты видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -707,7 +707,7 @@ elif step.lower() == "город":
                                           "\nТы видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -753,7 +753,7 @@ elif step.lower() == "город":
                                       "\nХочешь с ними познакомиться? Y / N")
                             while variable:
                                 step = input("Познакомиться?")
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 if step.lower() == "y":
                                     food -= 1
@@ -762,7 +762,7 @@ elif step.lower() == "город":
                                         "\nНо ты очень проголодался. Ты видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -797,7 +797,7 @@ elif step.lower() == "город":
                                           "\nТы видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -843,7 +843,7 @@ elif step.lower() == "город":
                   "\nХочешь проявить инициативу? Y / N")
             while variable:
                 step = input("Проявить инициативу?")
-                if step.lower() != "y" or step.lower() != "n":
+                if step.lower() != "y" and step.lower() != "n":
                     print('Вы должны ввести "y" или "n"')
                 if step.lower() == "y":
                     food -= 1
@@ -902,7 +902,7 @@ elif step.lower() == "город":
                                   "\nХочешь попить? Y / N")
                             while variable:
                                 step = input("Хочешь попить?")
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 if step.lower() == "y":
                                     food -= 1
@@ -920,7 +920,7 @@ elif step.lower() == "город":
                                           "\nХочешь с ними познакомиться? Y / N")
                                     while variable:
                                         step = input("Познакомиться?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food -= 1
@@ -972,7 +972,7 @@ elif step.lower() == "город":
                                           "\nХочешь с ними познакомиться? Y / N")
                                     while variable:
                                         step = input("Познакомиться?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food -= 1
@@ -1024,7 +1024,7 @@ elif step.lower() == "город":
                           "\nХочешь попить? Y / N")
                     while variable:
                         step = input("Хочешь попить?")
-                        if step.lower() != "y" or step.lower() != "n":
+                        if step.lower() != "y" and step.lower() != "n":
                             print('Вы должны ввести "y" или "n"')
                         if step.lower() == "y":
                             food -= 1
@@ -1042,7 +1042,7 @@ elif step.lower() == "город":
                                   "\nХочешь с ними познакомиться? Y / N")
                             while variable:
                                 step = input("Познакомиться?")
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 if step.lower() == "y":
                                     food -= 1
@@ -1051,7 +1051,7 @@ elif step.lower() == "город":
                                          "\nНо ты очень проголодался. Ты видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -1086,7 +1086,7 @@ elif step.lower() == "город":
                                           "\nТы видишь в траве лежит кусок курочки. Хочешь его съесть? Y / N")
                                     while variable:
                                         step = input("Съесть кусок курочки?")
-                                        if step.lower() != "y" or step.lower() != "n":
+                                        if step.lower() != "y" and step.lower() != "n":
                                             print('Вы должны ввести "y" или "n"')
                                         if step.lower() == "y":
                                             food += 1
@@ -1132,7 +1132,7 @@ elif step.lower() == "город":
                                   "\nВ парке ты видишь несколько резвящихся на поляне бродячих псов?"
                                   "\nХочешь с ними познакомиться? Y / N")
                             while variable:
-                                if step.lower() != "y" or step.lower() != "n":
+                                if step.lower() != "y" and step.lower() != "n":
                                     print('Вы должны ввести "y" или "n"')
                                 step = input("Познакомиться?")
                                 if step.lower() == "y":
@@ -1168,4 +1168,12 @@ elif step.lower() == "город":
                                     variable = False
 else:
     print("Ты долго думал! Тебя забрала служба по отлову бездомных животных. Квест окончен за решеткой!"
+          "\n----------------"
+          "\n|         =    |"
+          "\n| |       ==== |"
+          "\n| --=======    |"
+          "\n|   |     |    |"
+          "\n   FOOD: " + "*" * food + ""
+          "\n  WATER: " + "*" * water + ""
+          "\n----------------"
           "\nGAME OVER")
