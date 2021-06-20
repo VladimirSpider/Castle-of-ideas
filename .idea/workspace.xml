@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1cdaddf-a4a9-424e-bcd5-77567711c534" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Text_quest(DOG).py" beforeDir="false" afterPath="$PROJECT_DIR$/Text_quest(DOG).py" afterDir="false" />
-    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +19,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Dog3lvl.py" />
-  </component>
-  <component name="RunManager" selected="Python.Text_quest(DOG)">
+
     <configuration name="Dog3lvl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Castle-of-ideas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,6 +62,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+
     <configuration name="Text_quest(DOG)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Castle-of-ideas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+
         <item itemvalue="Python.Text_quest(DOG)" />
         <item itemvalue="Python.Dog4lvl" />
         <item itemvalue="Python.Dog3lvl" />
