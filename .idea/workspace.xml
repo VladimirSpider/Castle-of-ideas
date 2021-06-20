@@ -19,7 +19,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Dog3lvl.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Petr_\OneDrive\Документы" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.Text_quest(DOG)">
     <configuration name="Dog3lvl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
