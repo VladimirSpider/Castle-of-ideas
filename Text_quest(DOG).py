@@ -487,14 +487,15 @@ elif step.lower() == "город":
                           "\nутолить голод. Сколько ты хочешь съесть хотдогов (введи число от 1 до 10)."
                           "\nБудьте аккуратным, 1 хот-дог равен одной единице пищевого запаса!")
                     while variable:
-                        step = int(input("Число съеденных хот-догов: "))
-                        if 10 < step:
-                            print('Вы должны ввести число от 1 до 10')
-                        elif 1 > step:
-                            print('Вы должны ввести число от 1 до 10')
-                        else:
+                        step1 = 0
+                        step = input("Число съеденных хот-догов: ")
+                        if step == "1" or step == "2" or step == "3" or step == "3" or step == "5" or step == "6" or step == "7" or step == "8" or step == "9" or step == "10":
+                            step = int(step)
                             food = food + step * 1
-                        if food > 5 and 0 < step < 11:
+                            step1 = step
+                        else:
+                            print('Вы должны ввести число от 1 до 10')
+                        if food > 5 and 0 < step1 < 11:
                             print("----------------"
                                   "\n|         =    |"
                                   "\n| |       ==== |"
@@ -508,7 +509,7 @@ elif step.lower() == "город":
                                   "\nпродавец и пустил тебя на хот-дог."
                                   "\nGAME OVER")
                             variable = False
-                        elif food <= 5 and 0 < step < 11:
+                        elif food <= 5 and 0 < step1 < 11:
                             print("----------------"
                                   "\n|         =    |"
                                   "\n| |       ==== |"
@@ -866,14 +867,15 @@ elif step.lower() == "город":
                           "\nутолить голод. Сколько ты хочешь съесть хотдогов (введи число от 1 до 10)."
                           "\nБудьте аккуратным, 1 хот-дог равен одной единице пищевого запаса!")
                     while variable:
-                        step = int(input("Число съеденных хот-догов: "))
-                        if 10 < step:
-                            print('Вы должны ввести число от 1 до 10')
-                        elif 1 > step:
-                            print('Вы должны ввести число от 1 до 10')
-                        else:
+                        step1=0
+                        step = input("Число съеденных хот-догов: ")
+                        if step=="1" or step=="2" or step=="3" or step=="3" or step=="5" or step=="6" or step=="7" or step=="8" or step=="9" or step=="10":
+                            step = int(step)
                             food = food + step * 1
-                        if food > 5 and 0 < step < 11:
+                            step1 = step
+                        else:
+                            print('Вы должны ввести число от 1 до 10')
+                        if food > 5 and 0 < step1 < 11:
                             print("----------------"
                                   "\n|         =    |"
                                   "\n| |       ==== |"
@@ -887,7 +889,7 @@ elif step.lower() == "город":
                                   "\nпродавец и пустил тебя на хот-дог."
                                   "\nGAME OVER")
                             variable = False
-                        elif food <= 5 and 0 < step < 11:
+                        elif food <= 5 and 0 < step1 < 11:
                             print("----------------"
                                   "\n|         =    |"
                                   "\n| |       ==== |"
