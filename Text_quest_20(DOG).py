@@ -414,6 +414,19 @@ while variable:
                       "\nGAME OVER!")
                 variable = False
                 break
+            elif water == 0 and food == 0:
+                print("----------------"
+                      "\n|         =    |"
+                      "\n| |       ==== |"
+                      "\n| --=======    |"
+                      "\n|   |     |    |"
+                      "\n   FOOD: " + "*" * food + ""
+                      "\n  WATER: " + "*" * water + ""
+                      "\n----------------")
+                print("Ты сдох от обезвоживания и голода. Надо было пить и кушать!"
+                      "\nGAME OVER!")
+                variable = False
+                break
     break
 while variable:
     print("В парке ты видишь несколько резвящихся на поляне бродячих псов?"
