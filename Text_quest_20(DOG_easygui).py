@@ -224,12 +224,17 @@ elif step.lower() == "город":
                   "\nхот-догов. Видя это, ты понимаешь, что это твой шанс"
                   "\nутолить голод!")
             while variable:
+                step1 = 0
                 step = easygui.choicebox("Сколько ты хочешь съесть хотдогов? Будь аккуратным, "
                                          "\n1 хот-дог равен одной единице пищевого запаса!",
                                          choices=["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
-                step = int(step)
-                food = food + step * 1
-                if food > 5 and 0 < step < 11:
+                if step == None:
+                    easygui.msgbox("Не нажимайте 'Cancel'!")
+                elif step != None:
+                    step = int(step)
+                    food = food + step * 1
+                    step1 = step
+                if food > 5 and 0 < step1 < 11:
                     easygui.msgbox("----------------"
                           "\n|         =    |"
                           "\n| |       ==== |"
@@ -243,7 +248,7 @@ elif step.lower() == "город":
                           "\nпродавец и пустил тебя на хот-дог."
                           "\nGAME OVER")
                     variable = False
-                elif food <= 5 and 0 < step < 11:
+                elif food <= 5 and 0 < step1 < 11:
                     easygui.msgbox("----------------"
                           "\n|         =    |"
                           "\n| |       ==== |"
@@ -283,13 +288,18 @@ else:
           "\nGAME OVER")
     variable = False
 while variable:
+    step1 = -1
     step = easygui.choicebox("Вот ты уже вбегаешь в Лошицкий, пробежав приличное расстояние, ты почти у цели."
                                 "\nТы видишь в траве лежит два кусочка курочки. Сколько кусочков курочки ты хочешь съесть?"
                                 "\nБудь аккуратным, 1 кусочек курочки равен одной единице пищевого запаса!",
                                 choices=["0", "1", "2"])
-    step = int(step)
-    food = food + step * 1
-    if food <= 5 and step == 1:
+    if step == None:
+        easygui.msgbox("Не нажимайте 'Cancel'!")
+    elif step != None:
+        step = int(step)
+        food = food + step * 1
+        step1 = step
+    if food <= 5 and step1 == 1:
         water -= 1
         easygui.msgbox("Ты подкрепился и у тебя появились силы двигаться дальше."
                 "\n----------------"
@@ -301,7 +311,7 @@ while variable:
                 "\n  WATER: " + "*" * water + ""
                 "\n----------------")
         break
-    elif food <= 5 and step == 2:
+    elif food <= 5 and step1 == 2:
         water -= 1
         easygui.msgbox("Ты подкрепился и у тебя появились силы двигаться дальше."
                 "\n----------------"
@@ -313,7 +323,7 @@ while variable:
                 "\n  WATER: " + "*" * water + ""
                 "\n----------------")
         break
-    elif food > 5 and (step == 2 or step == 1):
+    elif food > 5 and (step1 == 2 or step1 == 1):
         water -= 1
         easygui.msgbox("Ты обожрался. Не можешь двигаться. Как раз в это время по парку"
                 "\nпроходила служба отлова бездомных животных. Они тебя поймали."
@@ -328,7 +338,7 @@ while variable:
                 "\n----------------"
                 "\nGAME OVER")
         variable = False
-    elif food <= 5 and step == 0:
+    elif food <= 5 and step1 == 0:
         food -= 1
         water -= 1
         if food == 0:
