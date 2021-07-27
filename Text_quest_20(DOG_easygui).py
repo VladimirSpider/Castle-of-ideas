@@ -2,7 +2,10 @@ import easygui
 food = 5
 water = 5
 variable = True
-image = "img/dog.jpg"
+dict_image = {
+    'dog': "img/dog.jpg",
+    'start': "img/way.jpg"
+}
 easygui.msgbox("Правила: Следите за значениями еды и воды."
       "\nЗначения еды и воды не должны быть меньше 0 или превышать 5!"
       "\n\nВы красивый, сильный, молодой и юный ПЁС! Вы немного загуляли."
@@ -13,10 +16,10 @@ easygui.msgbox("Правила: Следите за значениями еды 
       "\n| |       ==== |"
       "\n| --=======    |"
       "\n|   |     |    |"
-      "\n   FOOD: " + "*" * food + ""
-      "\n  WATER: " + "*" * water + ""
-      "\n----------------", image="img/dog.jpg")
-step = easygui.buttonbox("Будете добираться через МКАД или через город?", image="img/way.jpg",
+      "\n   FOOD: " + "*" * food + "
+      "\n  WATER: " + "*" * water + "
+      "\n----------------",image=dict_image['dog'])
+step = easygui.buttonbox("Будете добираться через МКАД или через город?", image=dict_image['start'],
                          choices = ["Мкад", "Город", "Надо подумать"])
 if step.lower() == "мкад":
     food -= 1
@@ -176,11 +179,11 @@ elif step.lower() == "город":
           "\n----------------"
           "\nОблегчившись на ногу, задумывшегося и говорящего по телефону "
           "\nслучайного прохожего около ТЦ Спектр,ты начал движение сквозь"
-          "\nзнойный и жаркий центр города!")
+          "\nзнойный и жаркий центр города!",image="img/spectrum.jpg")
     while variable:
         step = easygui.buttonbox("Пробежав приличное число км. и добежав до парка "
                                  "\nЧелюскинцев ты почувствовал голод и жажду!"
-                                 "\nХочешь утолить жажду?",
+                                 "\nХочешь утолить жажду?", image="img/park1.jpg",
                                  choices = ["Y", "N"])
         if step.lower() == "y":
             food -= 1
@@ -193,7 +196,7 @@ elif step.lower() == "город":
                   "\n   FOOD: " + "*" * food + ""
                   "\n  WATER: " + "*" * water + ""
                   "\n----------------"
-                  "\nТы забежал в сам парк и попил из фантана!")
+                  "\nТы забежал в сам парк и попил из фантана!", image="img/fountain.jpg")
             break
         elif step.lower() == "n":
             food -= 1
@@ -206,11 +209,11 @@ elif step.lower() == "город":
                   "\n   FOOD: " + "*" * food + ""
                   "\n  WATER: " + "*" * water + ""
                   "\n----------------"
-                  "\nТебя мучает жажда, но ты решил потерпеть!")
+                  "\nТебя мучает жажда, но ты решил потерпеть!", image=image)
             break
     while variable:
         step = easygui.buttonbox("Пришло время пожрать! Ты видишь продовца хот-догов "
-                                 "\nс передвижной тележкой.Хочешь проявить инициативу?",
+                                 "\nс передвижной тележкой.Хочешь проявить инициативу?", image="img/hot_dog.jpg",
                                  choices=["Y", "N"])
         if step.lower() == "y":
             food -= 1
@@ -230,7 +233,7 @@ elif step.lower() == "город":
                   "\nПродавец вскрикивает, случайным движением руки "
                   "\nопракидывает тележку и на земле оказываются 10-ть "
                   "\nхот-догов. Видя это, ты понимаешь, что это твой шанс"
-                  "\nутолить голод!")
+                  "\nутолить голод!", image="img/bite.jpg")
             while variable:
                 step1 = 0
                 step = easygui.choicebox("Сколько ты хочешь съесть хотдогов? Будь аккуратным, "
@@ -254,7 +257,7 @@ elif step.lower() == "город":
                           "\nТы съел много хот-догов. Ты так обожрался, "
                           "\nчто не смог двигаться. Тебя нагнал разгневанный "
                           "\nпродавец и пустил тебя на хот-дог."
-                          "\nGAME OVER")
+                          "\nGAME OVER", image="img/dog ate.jpg")
                     variable = False
                 elif food <= 5 and 0 < step1 < 11:
                     easygui.msgbox("----------------"
@@ -266,7 +269,7 @@ elif step.lower() == "город":
                           "\n  WATER: " + "*" * water + ""
                           "\n----------------"
                           "\nСкушав несколько хот-догов(" + str(step) + "), "
-                          "\nты почувствовал прилив сил и решил побежать дальше.")
+                          "\nты почувствовал прилив сил и решил побежать дальше.", image="img/hot_dogs.jpg")
                     break
             break
         elif step.lower() == "n":
@@ -281,7 +284,7 @@ elif step.lower() == "город":
                   "\n  WATER: " + "*" * water + ""
                   "\n----------------"
                   "\nТы очень умный, хитрый и решительный ПЁС. Но также ты очень хороший. "
-                  "\nТы решил потерпеть и покушать позже. Отправляешься дальше в путь.")
+                  "\nТы решил потерпеть и покушать позже. Отправляешься дальше в путь.", image=image)
             break
 else:
     easygui.msgbox("Ты долго думал! Тебя забрала служба по отлову бездомных животных. Квест окончен за решеткой!"
@@ -293,7 +296,7 @@ else:
           "\n   FOOD: " + "*" * food + ""
           "\n  WATER: " + "*" * water + ""
           "\n----------------"
-          "\nGAME OVER")
+          "\nGAME OVER", image="img/bad_dog.jpg")
     variable = False
 while variable:
     step1 = -1
@@ -317,7 +320,7 @@ while variable:
                 "\n|   |     |    |"
                 "\n   FOOD: " + "*" * food + ""
                 "\n  WATER: " + "*" * water + ""
-                "\n----------------")
+                "\n----------------", image=image)
         break
     elif food <= 5 and step1 == 2:
         water -= 1
@@ -329,7 +332,7 @@ while variable:
                 "\n|   |     |    |"
                 "\n   FOOD: " + "*" * food + ""
                 "\n  WATER: " + "*" * water + ""
-                "\n----------------")
+                "\n----------------", image=image)
         break
     elif food > 5 and (step1 == 2 or step1 == 1):
         water -= 1
@@ -344,7 +347,7 @@ while variable:
                 "\n   FOOD: " + "*" * food + ""
                 "\n  WATER: " + "*" * water + ""
                 "\n----------------"
-                "\nGAME OVER")
+                "\nGAME OVER", image="img/dog ate.jpg")
         variable = False
     elif food <= 5 and step1 == 0:
         food -= 1
@@ -371,7 +374,7 @@ while variable:
                     "\n   FOOD: " + "*" * food + ""
                     "\n  WATER: " + "*" * water + ""
                     "\n----------------"
-                    "\nТы решил не есть кусок курочки и начал движение дальше.")
+                    "\nТы решил не есть кусок курочки и начал движение дальше.", image=image)
             break
 while variable:
     step = easygui.buttonbox("Летняя дикая жара на улице заставляет тебя задуматься о принятии жидкости."
