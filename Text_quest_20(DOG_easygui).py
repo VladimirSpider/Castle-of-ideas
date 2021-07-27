@@ -4,7 +4,8 @@ water = 5
 variable = True
 dict_image = {
     'dog': "img/dog.jpg",
-    'start': "img/way.jpg"
+    'start': "img/way.jpg",
+    'mkad': "img/mkad.jpg"
 }
 easygui.msgbox("Правила: Следите за значениями еды и воды."
       "\nЗначения еды и воды не должны быть меньше 0 или превышать 5!"
@@ -16,8 +17,8 @@ easygui.msgbox("Правила: Следите за значениями еды 
       "\n| |       ==== |"
       "\n| --=======    |"
       "\n|   |     |    |"
-      "\n   FOOD: " + "*" * food + "
-      "\n  WATER: " + "*" * water + "
+      "\n   FOOD: " + "*" * food + ""
+      "\n  WATER: " + "*" * water + ""
       "\n----------------",image=dict_image['dog'])
 step = easygui.buttonbox("Будете добираться через МКАД или через город?", image=dict_image['start'],
                          choices = ["Мкад", "Город", "Надо подумать"])
@@ -32,7 +33,7 @@ if step.lower() == "мкад":
           "\n   FOOD: " + "*" * food + ""
           "\n  WATER: " + "*" * water + ""
           "\n----------------"
-          "\nЛегкой трусцой ты побежал по летнему зеленому уручью в сторону МКАДа.", image = "img/dog.jpg")
+          "\nЛегкой трусцой ты побежал по летнему зеленому уручью в сторону МКАДа.", image=dict_image['mkad'])
     while variable:
         stop = easygui.buttonbox("По пути ты увидел остановку. Тебе надо принять решение: "
                                  "\n1. Идти дальше пешком, 2. Проехать на автобусе. ", image = 'img/dog21.jpg',
